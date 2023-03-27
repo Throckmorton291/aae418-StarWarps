@@ -4,5 +4,12 @@ import RPi.GPIO as GPIO
 GPIO.setmode(GPIO.BOARD)
 
 #Pin definitions
-led = 8
-actuator = 
+led = 37
+actuator = 33
+
+#Set up pins as outputs
+GPIO.setup(led,GPIO.OUT)
+GPIO.setup(actuator,GPIO.OUT)
+
+#Turn on the LED
+GPIO.output(led,True)
