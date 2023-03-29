@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-import sleep from time
+import time
 
 #Defines pinout as actual pin numbers and not Broadcom SOC pin numbers
 GPIO.setmode(GPIO.BOARD)
@@ -17,5 +17,5 @@ GPIO.output(led,True)
 
 #Run the linear actuator
 GPIO.output(actuator,True)
-sleep(1)
+time.sleep(1)
 GPIO.output(actuator,False)
