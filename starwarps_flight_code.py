@@ -12,6 +12,7 @@ PWMpin = 32
 #Set up pins as outputs
 GPIO.setup(led,GPIO.OUT)
 GPIO.setup(actuator,GPIO.OUT)
+GPIO.setup(PWMpin,GPIO.OUT)
 pi_pwm = GPIO.PWM(PWMpin,1000)
 
 #Start PWM duty cycle
